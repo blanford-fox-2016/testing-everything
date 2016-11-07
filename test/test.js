@@ -11,17 +11,14 @@ const test = require('./index');
 // testing ======
 //===============
 
-describe('#isEven()',()  => {
   it('it should return true if input even number',() => {
     assert.equal(true,test.isEven(2));
   })
-})
 
-describe('#isOdd()',() => {
+
   it('it should return true if input odd number',() => {
     assert.equal(true,test.isOdd(3))
   })
-})
 
 //===============
 // curry test ===
