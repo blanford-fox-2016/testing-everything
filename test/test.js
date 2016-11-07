@@ -7,62 +7,46 @@ const generator = require('../index')
 const isEven = generator.isEven
 const isOdd = generator.isOdd
 
-describe('Function isEven(4)', function() {
-    it('must return true', function() {
+describe('Function isEven', function() {
+    it('isEven(4) must return true', function() {
         expect(isEven(4)).to.be.true
     })
-})
 
-describe('Function isEven(7)', function() {
-    it('must return false', function() {
+    it('isEven(7) must return false', function() {
         expect(isEven(7)).to.be.false
     })
-})
 
-describe(`Function isEven(' 7 ')`, function() {
-    it('must return false', function() {
+    it(`isEven('7') must return false`, function() {
         expect(isEven('7')).to.be.false
     })
-})
 
-describe(`Function isEven([7])`, function() {
-    it('must return false', function() {
+    it('isEven([7]) must return false', function() {
         expect(isEven([7])).to.be.false
     })
-})
 
-describe(`Function isEven()`, function() {
-    it('must return false', function() {
+    it('isEven() must return false', function() {
         expect(isEven()).to.be.false
     })
 })
 
-describe('Function isOdd(7)', function() {
-    it('must return true', function() {
+describe('Function isOdd', function() {
+    it('isOdd(7) must return true', function() {
         expect(isOdd(7)).to.be.true
     })
-})
 
-describe('Function isOdd(8)', function() {
-    it('must return false', function() {
+    it('isOdd(8) must return false', function() {
         expect(isOdd(8)).to.be.false
     })
-})
 
-describe(`Function isOdd(' 7 ')`, function() {
-    it('must return false', function() {
+    it(`isOdd('7') must return false`, function() {
         expect(isOdd('7')).to.be.false
     })
-})
 
-describe(`Function isOdd([7])`, function() {
-    it('must return false', function() {
+    it('isOdd([7]) must return false', function() {
         expect(isOdd([7])).to.be.false
     })
-})
 
-describe(`Function isOdd()`, function() {
-    it('must return false', function() {
+    it('isOdd() must return false', function() {
         expect(isOdd()).to.be.false
     })
 })
