@@ -3,7 +3,9 @@
 const chai = require('chai');
 const assert = chai.assert;
 const expect = chai.expect;
-const caterpillar = require('../mathamvan');
+const mathamvan = require('../mathamvan');
+
+const add = mathamvan.add;
 
 describe('add', () => {
   it('should sum first parameter and second parameter', () => {
