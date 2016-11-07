@@ -17,4 +17,7 @@ describe('add', () => {
   it('should give message that the function need 2 parameters', () => {
     expect(add()).eql('It needs two parameters');
   });
+  it('should give message that the function need 2 parameters', () => {
+    expect(add(1)).eql('It needs two parameters');
+  });
 })
