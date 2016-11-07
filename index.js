@@ -1,15 +1,19 @@
 'use strict'
 
-let isEven = (value) => {
-    if (value % 2 === 0) {
+let isEven = function(value) {
+    if (typeof(value) != "number") {
+        return false
+    } else if (value % 2 == 0) {
         return true
     } else {
         return false
     }
 }
 
-let isOdd = (value) => {
-    if (value % 2 != 0) {
+let isOdd = function(value) {
+    if (typeof(value) != "number") {
+        return false
+    } else if (value % 2 == 1) {
         return true
     } else {
         return false
