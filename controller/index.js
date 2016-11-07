@@ -20,5 +20,12 @@ module.exports = {
 
         if (regexPatt.test(input) == true) return true
         else return false
+    },
+
+    hardPassword: function (input) {
+        var regexPatt = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[_\W]).+$/)
+
+        if (regexPatt.test(input) == true) return true
+        else return false
     }
 }

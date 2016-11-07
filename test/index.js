@@ -39,6 +39,11 @@ describe("Test is input like email format", function () {
 
 describe("Test is input contains one symbol, capital letter, and number", function () {
     it("Return true if input contains one symbol, capital letter, and number", function () {
+        expect(controller.hardPassword("")).to.be.false
+        expect(controller.hardPassword("abc")).to.be.false
+        expect(controller.hardPassword("123")).to.be.false
+        expect(controller.hardPassword("Abc")).to.be.false
+        expect(controller.hardPassword("Abc123")).to.be.false
         expect(controller.hardPassword("@Abcde1")).to.be.true
     })
 })
