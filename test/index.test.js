@@ -20,6 +20,9 @@ describe('Testing Multiple Function', () => {
       char_a, char_b,
       char_no_number_a,
       char_no_number_b
+  /*
+    * assign variable before every test
+  */
   beforeEach(function() {
     console.log('assign variable before every test')
     number_a = 3
