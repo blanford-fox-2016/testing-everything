@@ -9,7 +9,6 @@ let multiple = (a, b) => {
     // only 1 params exist
     return 'only 1 param'
   }else{
-    console.log(a*b);
     return a * b
   }
 }
