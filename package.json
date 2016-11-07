@@ -1,0 +1,22 @@
+{
+  "name": "testing-everything",
+  "version": "1.0.0",
+  "description": "unit test exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha chai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blanford-fox-2016/testing-everything.git"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Ahyana Rizky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blanford-fox-2016/testing-everything/issues"
+  },
+  "homepage": "https://github.com/blanford-fox-2016/testing-everything#readme"
+}
