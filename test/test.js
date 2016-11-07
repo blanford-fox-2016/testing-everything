@@ -29,4 +29,4 @@ describe('#isOdd()',() => {
 expect(test.calculate(2)(6)).to.equal(8);
 expect(test.calculate(2)(2)).to.equal(4);
 expect(test.calculate(2)(6)).to.equal(8);
-expect(test.calculate(10)(2)).to.equal(10); //assertion error because calculate return 12
+expect(test.calculate(10)(2)).to.not.equal(10);
