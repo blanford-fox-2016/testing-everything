@@ -20,6 +20,7 @@ describe("Test if input more than four char", function () {
 describe("Test is input only contains number", function () {
     it("Return true if input string is only contains number", function () {
         expect(controller.onlyNumber("123")).to.be.true
+        expect(controller.onlyNumber("123abc")).to.be.false
     })
 })
 
