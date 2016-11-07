@@ -9,6 +9,15 @@ Practice TTD - Test Driven Development using Mocha.js & Chai.js with work flow :
 3. BLUE
     * Refactor the code (make it right)
 
+## Dependencies
+1. mocha : ```npm i -D mocha```
+2. chai : ```npm i -S chai```
+
+## How To use
+1. ```npm install```
+2. ```mocha```
+3. live watch : ```mocha -w```
+
 ## Tree
 ```
 .
