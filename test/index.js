@@ -6,6 +6,7 @@ describe("Test if input string empty or not", function () {
     it("Return true if input string is empty", function () {
         expect(controller.isEmpty("")).to.be.true
         expect(controller.isEmpty("adsa")).to.be.false
+        expect(controller.isEmpty("2131")).to.be.false
     })
 })
 
