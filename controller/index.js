@@ -13,5 +13,12 @@ module.exports = {
     onlyNumber: function (input) {
         if (isNaN(input) == false) return true
         else return false
+    },
+
+    isEmail: function (input) {
+        var regexPatt = new RegExp(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/)
+
+        if (regexPatt.test(input) == true) return true
+        else return false
     }
 }

@@ -26,6 +26,12 @@ describe("Test is input only contains number", function () {
 
 describe("Test is input like email format", function () {
     it("Return true if input like email format", function () {
+        expect(controller.isEmail("")).to.be.false
+        expect(controller.isEmail("123")).to.be.false
+        expect(controller.isEmail("abc")).to.be.false
+        expect(controller.isEmail("dharmadi@")).to.be.false
+        expect(controller.isEmail("dharmadi@gmail")).to.be.false
+        expect(controller.isEmail("dharmadi@gmailcom")).to.be.false
         expect(controller.isEmail("dharmadi93@gmail.com")).to.be.true
     })
 })
