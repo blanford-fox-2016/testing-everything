@@ -12,11 +12,11 @@ describe('add function will return the sum result of both parameter', () => {
   let a;
 
   beforeEach(() => {
-    a = 1;
+    a = 5;
   });
 
   it('should sum first parameter and second parameter', () => {
-    expect(add(a,2)).eql(3);
+    expect(add(a,2)).eql(7);
   });
   it('should give message that add function need 2 number as parameters', () => {
     expect(add('a', a)).eql('Parameters are not valid, both must be a number');
