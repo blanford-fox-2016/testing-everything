@@ -1,6 +1,6 @@
 const mocha = require('mocha')
 const expect = mocha.expect
-
+const controller = require('../controller/index')
 
 describe("Test if input string empty or not", function () {
     it("Return true if input string is empty", function () {
