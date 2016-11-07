@@ -12,6 +12,8 @@ describe("Test if input string empty or not", function () {
 describe("Test if input more than four char", function () {
     it("Return true if input string is more than four", function () {
         expect(controller.moreThanFour("abcde")).to.be.true
+        expect(controller.moreThanFour("abcd")).to.be.false
+        expect(controller.moreThanFour("")).to.be.false
     })
 })
 
